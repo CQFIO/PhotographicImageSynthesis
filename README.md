@@ -9,12 +9,12 @@ This is a Tensorflow implementation of cascaded refinement networks to synthesiz
 ### Requirement
 Required python libraries: Tensorflow (>=1.0) + Scipy + Numpy + Pillow.
 
-Tested in Ubuntu + Intel I7 CPU + Nvidia Titan X (Pascal) with Cuda (>=8.0) and CuDNN (>=5.0). CPU mode should also work with minor changes.
+Tested in Ubuntu + Intel i7 CPU + Nvidia Titan X (Pascal) with Cuda (>=8.0) and CuDNN (>=5.0). CPU mode should also work with minor changes.
 
 ### Quick Start (Testing)
 1. Clone this repository.
 2. Download the pretrained models from Google Drive by running "python download_models.py". It takes several minutes to download all the models.
-3. Run "python demo_512p.py" or "python demo_1024p.py" (requires large memory) to synthesize images.
+3. Run "python demo_512p.py" or "python demo_1024p.py" (requires large GPU memory) to synthesize images.
 4. The synthesized images are saved in "result_512p/final" or "result_1024p/final".
 
 ### Training

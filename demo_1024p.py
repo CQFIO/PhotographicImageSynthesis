@@ -75,10 +75,11 @@ def recursive_generator(label,sp):
 def compute_error(real,fake,label):
     return tf.reduce_sum(tf.reduce_mean(label*tf.expand_dims(tf.reduce_mean(tf.abs(fake-real),reduction_indices=[3]),-1),reduction_indices=[1,2]))
 
-os.system('nvidia-smi -q -d Memory |grep -A4 GPU|grep Free >tmp')
-os.environ['CUDA_VISIBLE_DEVICES']=str(np.argmax([int(x.split()[2]) for x in open('tmp','r').readlines()]))
-os.system('rm tmp')
+#os.system('nvidia-smi -q -d Memory |grep -A4 GPU|grep Free >tmp')
+#os.environ['CUDA_VISIBLE_DEVICES']=str(np.argmax([int(x.split()[2]) for x in open('tmp','r').readlines()]))#select a GPU with maximum available memory
+#os.system('rm tmp')
 sess=tf.Session()
+
 sp=1024
 is_training=False
 with tf.variable_scope(tf.get_variable_scope()):
