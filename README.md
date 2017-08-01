@@ -24,6 +24,9 @@ To train a model at 512p resolution, we fine-tune the pretrained model at 256p u
 
 To train a model at 1024p resolution, we fine-tune the pretrained model at 512p using "demo_1024p.py". Also change "is_training=True" and file paths accordingly.
 
+## Video
+https://youtu.be/0fhUJT21-bs
+
 ## Citation
 If you use our code for research, please cite our paper:
 
