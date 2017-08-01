@@ -32,5 +32,10 @@ If you use our code for research, please cite our paper:
 
 Qifeng Chen and Vladlen Koltun. Photographic Image Synthesis with Cascaded Refinement Networks. In ICCV 2017.
 
+## Todo List
+1. The MTurk scripts for evaluation.
+2. Add the code and models for the GTA dataset.
+3. ...
+
 ## License
 MIT License
