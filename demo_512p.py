@@ -7,8 +7,6 @@ import numpy as np
 def lrelu(x):
     return tf.maximum(0.2*x,x)
 
-MEAN_VALUES = np.array([123.6800, 116.7790, 103.9390]).reshape((1,1,1,3))
-
 def build_net(ntype,nin,nwb=None,name=None):
     if ntype=='conv':
         return tf.nn.relu(tf.nn.conv2d(nin,nwb[0],strides=[1,1,1,1],padding='SAME',name=name)+nwb[1])
@@ -28,7 +26,7 @@ def build_vgg19(input,reuse=False):
     net={}
     vgg_rawnet=scipy.io.loadmat('VGG_Model/imagenet-vgg-verydeep-19.mat')
     vgg_layers=vgg_rawnet['layers'][0]
-    net['input']=input-MEAN_VALUES
+    net['input']=input-np.array([123.6800, 116.7790, 103.9390]).reshape((1,1,1,3))
     net['conv1_1']=build_net('conv',net['input'],get_weight_bias(vgg_layers,0),name='vgg_conv1_1')
     net['conv1_2']=build_net('conv',net['conv1_1'],get_weight_bias(vgg_layers,2),name='vgg_conv1_2')
     net['pool1']=build_net('pool',net['conv1_2'])
@@ -73,7 +71,6 @@ def compute_error(real,fake,label):
 #os.environ['CUDA_VISIBLE_DEVICES']=str(np.argmax([int(x.split()[2]) for x in open('tmp','r').readlines()]))#select a GPU with maximum available memory
 #os.system('rm tmp')
 sess=tf.Session()
-
 is_training=False
 sp=512
 with tf.variable_scope(tf.get_variable_scope()):
@@ -91,9 +88,8 @@ with tf.variable_scope(tf.get_variable_scope()):
     p4=compute_error(vgg_real['conv4_2'],vgg_fake['conv4_2'],tf.image.resize_area(label,(sp//8,sp//4)))/5.6
     p5=compute_error(vgg_real['conv5_2'],vgg_fake['conv5_2'],tf.image.resize_area(label,(sp//16,sp//8)))*10/1.5
     G_loss=p0+p1+p2+p3+p4+p5
-    t_vars=tf.trainable_variables()
-    lr=tf.placeholder(tf.float32)
-
+t_vars=tf.trainable_variables()
+lr=tf.placeholder(tf.float32)
 G_opt=tf.train.AdamOptimizer(learning_rate=lr).minimize(G_loss,var_list=[var for var in t_vars])
 sess.run(tf.global_variables_initializer())
 ckpt=tf.train.get_checkpoint_state("result_512p")
@@ -107,7 +103,6 @@ else:
     print('loaded '+ckpt_prev.model_checkpoint_path)
     saver.restore(sess,ckpt_prev.model_checkpoint_path)
 saver=tf.train.Saver(max_to_keep=1000)
-
 if is_training:
     g_loss=np.zeros(3000,dtype=float)
     input_images=[None]*3000
@@ -125,12 +120,10 @@ if is_training:
             _,G_current,l0,l1,l2,l3,l4,l5=sess.run([G_opt,G_loss,p0,p1,p2,p3,p4,p5],feed_dict={label:np.concatenate((label_images[ind],np.expand_dims(1-np.sum(label_images[ind],axis=3),axis=3)),axis=3),real_image:input_images[ind],lr:1e-4})
             g_loss[ind]=G_current
             print("%d %d %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f"%(epoch,cnt,np.mean(g_loss[np.where(g_loss)]),np.mean(l0),np.mean(l1),np.mean(l2),np.mean(l3),np.mean(l4),np.mean(l5),time.time()-st))
-
         os.makedirs("result_512p/%04d"%epoch)
         target=open("result_512p/%04d/score.txt"%epoch,'w')
         target.write("%f"%np.mean(g_loss[np.where(g_loss)]))
         target.close()
-
         saver.save(sess,"result_512p/model.ckpt")
         if epoch%20==0:
             saver.save(sess,"result_512p/%04d/model.ckpt"%epoch)
@@ -141,7 +134,6 @@ if is_training:
             output=sess.run(generator,feed_dict={label:np.concatenate((semantic,np.expand_dims(1-np.sum(semantic,axis=3),axis=3)),axis=3)})
             output=np.minimum(np.maximum(output,0.0),255.0)
             scipy.misc.toimage(output[0,:,:,:],cmin=0,cmax=255).save("result_512p/%04d/%06d_output.jpg"%(epoch,ind))
-
 if not os.path.isdir("result_512p/final"):
     os.makedirs("result_512p/final")
 for ind in range(100001,100501):
