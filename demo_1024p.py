@@ -109,7 +109,7 @@ if is_training:
     g_loss=np.zeros(3000,dtype=float)
     input_images=[None]*3000
     label_images=[None]*3000
-    for epoch in range(1,3):
+    for epoch in range(1,6):
         if os.path.isdir("result_1024p/%04d"%epoch):
             continue
         cnt=0

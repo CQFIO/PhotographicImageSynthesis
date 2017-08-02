@@ -1,5 +1,5 @@
 from __future__ import division
-import os,cv2,helper,time,scipy.io
+import os,helper,time,scipy.io
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
 import numpy as np
