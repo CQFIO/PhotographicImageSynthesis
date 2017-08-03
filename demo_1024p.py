@@ -66,15 +66,15 @@ def recursive_generator(label,sp):
     return net
 
 def compute_error(real,fake,label):
-    #return tf.reduce_sum(tf.reduce_mean(label*tf.expand_dims(tf.reduce_mean(tf.abs(fake-real),reduction_indices=[3]),-1),reduction_indices=[1,2]))
-    return tf.reduce_mean(tf.abs(fake-real))
+    #return tf.reduce_sum(tf.reduce_mean(label*tf.expand_dims(tf.reduce_mean(tf.abs(fake-real),reduction_indices=[3]),-1),reduction_indices=[1,2]))#diversity loss
+    return tf.reduce_mean(tf.abs(fake-real))#simple loss
 
 #os.system('nvidia-smi -q -d Memory |grep -A4 GPU|grep Free >tmp')
 #os.environ['CUDA_VISIBLE_DEVICES']=str(np.argmax([int(x.split()[2]) for x in open('tmp','r').readlines()]))#select a GPU with maximum available memory
 #os.system('rm tmp')
 sess=tf.Session()
 is_training=False
-sp=1024
+sp=1024#spatial resolution: 1024x2048
 with tf.variable_scope(tf.get_variable_scope()):
     label=tf.placeholder(tf.float32,[None,None,None,20])
     real_image=tf.placeholder(tf.float32,[None,None,None,3])
@@ -90,9 +90,8 @@ with tf.variable_scope(tf.get_variable_scope()):
     p4=compute_error(vgg_real['conv4_2'],vgg_fake['conv4_2'],tf.image.resize_area(label,(sp//8,sp//4)))/5.6
     p5=compute_error(vgg_real['conv5_2'],vgg_fake['conv5_2'],tf.image.resize_area(label,(sp//16,sp//8)))*10/1.5
     G_loss=p0+p1+p2+p3+p4+p5
-t_vars=tf.trainable_variables()
 lr=tf.placeholder(tf.float32)
-G_opt=tf.train.AdamOptimizer(learning_rate=lr).minimize(G_loss,var_list=[var for var in t_vars if var.name.startswith('g_1024') or var.name.startswith('g_512')])#only fine-tune the last two refinement module due to memory limitation
+G_opt=tf.train.AdamOptimizer(learning_rate=lr).minimize(G_loss,var_list=[var for var in tf.trainable_variables() if var.name.startswith('g_1024') or var.name.startswith('g_512')])#only fine-tune the last two refinement module due to memory limitation
 sess.run(tf.global_variables_initializer())
 ckpt=tf.train.get_checkpoint_state("result_1024p")
 if ckpt:
@@ -105,6 +104,7 @@ else:
     print('loaded '+ckpt_prev.model_checkpoint_path)
     saver.restore(sess,ckpt_prev.model_checkpoint_path)
 saver=tf.train.Saver(max_to_keep=1000)
+
 if is_training:
     g_loss=np.zeros(3000,dtype=float)
     input_images=[None]*3000
@@ -136,6 +136,7 @@ if is_training:
             output=sess.run(generator,feed_dict={label:np.concatenate((semantic,np.expand_dims(1-np.sum(semantic,axis=3),axis=3)),axis=3)})
             output=np.minimum(np.maximum(output,0.0),255.0)
             scipy.misc.toimage(output[0,:,:,:],cmin=0,cmax=255).save("result_1024p/%04d/%06d_output.jpg"%(epoch,ind))
+
 if not os.path.isdir("result_1024p/final"):
     os.makedirs("result_1024p/final")
 for ind in range(100001,100501):
