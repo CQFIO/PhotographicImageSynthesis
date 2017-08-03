@@ -116,7 +116,7 @@ if is_training:
             cnt+=1
             if input_images[ind] is None:
                 label_images[ind]=helper.get_semantic_map("data/cityscapes/Label512Full/%08d.png"%ind)#training label
-                input_images[ind]=np.expand_dims(np.float32(scipy.misc.imread("data/cityscapes/RGB512Full_vivid/%08d.png"%ind)),axis=0)#training image
+                input_images[ind]=np.expand_dims(np.float32(scipy.misc.imread("data/cityscapes/RGB512Full_vivid/%08d.png"%ind)),axis=0)#training image with vivid appearance. see "optional_preprocessing"
             _,G_current,l0,l1,l2,l3,l4,l5=sess.run([G_opt,G_loss,p0,p1,p2,p3,p4,p5],feed_dict={label:np.concatenate((label_images[ind],np.expand_dims(1-np.sum(label_images[ind],axis=3),axis=3)),axis=3),real_image:input_images[ind],lr:1e-4})
             g_loss[ind]=G_current
             print("%d %d %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f"%(epoch,cnt,np.mean(g_loss[np.where(g_loss)]),np.mean(l0),np.mean(l1),np.mean(l2),np.mean(l3),np.mean(l4),np.mean(l5),time.time()-st))
