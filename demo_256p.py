@@ -143,4 +143,7 @@ for ind in range(100001,100501):
     semantic=helper.get_semantic_map("data/cityscapes/Label256Full/%08d.png"%ind)#test label
     output=sess.run(generator,feed_dict={label:np.concatenate((semantic,np.expand_dims(1-np.sum(semantic,axis=3),axis=3)),axis=3)})
     output=np.minimum(np.maximum(output, 0.0), 255.0)
-    scipy.misc.toimage(output[0,:,:,:],cmin=0,cmax=255).save("result_256p/final/%06d_output.jpg"%ind)
+    upper=np.concatenate((output[0,:,:,:],output[1,:,:,:],output[2,:,:,:]),axis=1)
+    middle=np.concatenate((output[3,:,:,:],output[4,:,:,:],output[5,:,:,:]),axis=1)
+    bottom=np.concatenate((output[6,:,:,:],output[7,:,:,:],output[8,:,:,:]),axis=1)
+    scipy.misc.toimage(np.concatenate((upper,middle,bottom),axis=0),cmin=0,cmax=255).save("result_256p/final/%06d_output.jpg"%ind)
