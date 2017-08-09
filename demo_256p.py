@@ -133,7 +133,7 @@ if is_training:
             upper=np.concatenate((output[0,:,:,:],output[1,:,:,:],output[2,:,:,:]),axis=1)
             middle=np.concatenate((output[3,:,:,:],output[4,:,:,:],output[5,:,:,:]),axis=1)
             bottom=np.concatenate((output[6,:,:,:],output[7,:,:,:],output[8,:,:,:]),axis=1)
-            scipy.misc.toimage(output[0,:,:,:],cmin=0,cmax=255).save("result_256p/%04d/%06d_output.jpg"%(epoch,ind))
+            scipy.misc.toimage(np.concatenate((upper,middle,bottom),axis=0),cmin=0,cmax=255).save("result_256p/%04d/%06d_output.jpg"%(epoch,ind))
 
 if not os.path.isdir("result_256p/final"):
     os.makedirs("result_256p/final")
