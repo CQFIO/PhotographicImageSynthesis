@@ -84,11 +84,11 @@ with tf.variable_scope(tf.get_variable_scope()):
     vgg_real=build_vgg19(real_image)
     vgg_fake=build_vgg19(generator,reuse=True)
     p0=compute_error(vgg_real['input'],vgg_fake['input'],label)
-    p1=compute_error(vgg_real['conv1_2'],vgg_fake['conv1_2'],label)
-    p2=compute_error(vgg_real['conv2_2'],vgg_fake['conv2_2'],tf.image.resize_area(label,(sp//2,sp)))
-    p3=compute_error(vgg_real['conv3_2'],vgg_fake['conv3_2'],tf.image.resize_area(label,(sp//4,sp//2)))
-    p4=compute_error(vgg_real['conv4_2'],vgg_fake['conv4_2'],tf.image.resize_area(label,(sp//8,sp//4)))
-    p5=compute_error(vgg_real['conv5_2'],vgg_fake['conv5_2'],tf.image.resize_area(label,(sp//16,sp//8)))*10
+    p1=compute_error(vgg_real['conv1_2'],vgg_fake['conv1_2'],label)/1.6
+    p2=compute_error(vgg_real['conv2_2'],vgg_fake['conv2_2'],tf.image.resize_area(label,(sp//2,sp)))/2.3
+    p3=compute_error(vgg_real['conv3_2'],vgg_fake['conv3_2'],tf.image.resize_area(label,(sp//4,sp//2)))/1.8
+    p4=compute_error(vgg_real['conv4_2'],vgg_fake['conv4_2'],tf.image.resize_area(label,(sp//8,sp//4)))/2.8
+    p5=compute_error(vgg_real['conv5_2'],vgg_fake['conv5_2'],tf.image.resize_area(label,(sp//16,sp//8)))*10/0.8#weights lambda are collected at 100th epoch
     content_loss=p0+p1+p2+p3+p4+p5
     G_loss=tf.reduce_sum(tf.reduce_min(content_loss,reduction_indices=0))*0.999+tf.reduce_sum(tf.reduce_mean(content_loss,reduction_indices=0))*0.001
 lr=tf.placeholder(tf.float32)
