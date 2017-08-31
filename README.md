@@ -32,6 +32,9 @@ If you use our code for research, please cite our paper:
 
 Qifeng Chen and Vladlen Koltun. Photographic Image Synthesis with Cascaded Refinement Networks. In ICCV 2017.
 
+## Amazon Turk Scripts
+The scripts are put in the folder "mturk_scripts".
+
 ## Todo List
 1. Add the code and models for the GTA dataset.
 
