@@ -38,5 +38,8 @@ The scripts are put in the folder "mturk_scripts".
 ## Todo List
 1. Add the code and models for the GTA dataset.
 
+## Question
+If you have any question or request about the training or test data, please email me at chenqifeng22@gmail.com.
+
 ## License
 MIT License
