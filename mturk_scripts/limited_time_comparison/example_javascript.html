@@ -1,0 +1,1350 @@
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+<section class="container" id="ImageAorB"><!-- Instructions -->
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<div class="panel panel-primary"><!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature --><a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>In each row, pick the image that is more realistic (left or right)?</strong> </a>
+<div class="panel-body" id="instructionBody"><!-- Add instruction body content here -->
+<p>There are 110 rows (pairs of images) in this HIT. For each row, focus on the two images, then click &ldquo;Show these images&rdquo;. The images will appear for some time: between 0.1 to 8 seconds. Focus before you click, so you see as much as possible even if the images only appear for a short time. Then choose which of the two images is more realistic: left or right. Your submission may be rejected if you make a mistake in an obvious case.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- End Instructions --><img src="http://web.stanford.edu/~cqf/mturk/mask.png" style="display: none;" /><script type="text/javascript">
+    function showHide(button,which,which2,tm) {
+            setTimeout(function(){
+            if(document.getElementById(which).complete && document.getElementById(which2).complete){
+                button.style.visibility="hidden";
+  			    document.getElementById(which).style.visibility="visible";
+    		    document.getElementById(which2).style.visibility="visible";
+                setTimeout(function(){document.getElementById(which).style.visibility="hidden";document.getElementById(which2).style.visibility="hidden";
+                document.getElementById(which).src="http://web.stanford.edu/~cqf/mturk/mask.png";
+                document.getElementById(which2).src="http://web.stanford.edu/~cqf/mturk/mask.png";
+                if(document.getElementById(which).complete && document.getElementById(which2).complete){
+                document.getElementById(which).style.visibility="visible";
+                document.getElementById(which2).style.visibility="visible";}},tm);
+            } else{button.value="Load again";showHide(button,which,which2,tm);}},500);
+    }
+</script>
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_1','hiddenB_1',${time_1})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_1" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_1" src="${image_A_url_1}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_1" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_1" src="${image_B_url_1}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_2','hiddenB_2',${time_2})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_2" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_2" src="${image_A_url_2}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_2" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_2" src="${image_B_url_2}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_3','hiddenB_3',${time_3})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_3" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_3" src="${image_A_url_3}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_3" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_3" src="${image_B_url_3}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_4','hiddenB_4',${time_4})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_4" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_4" src="${image_A_url_4}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_4" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_4" src="${image_B_url_4}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_5','hiddenB_5',${time_5})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_5" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_5" src="${image_A_url_5}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_5" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_5" src="${image_B_url_5}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_6','hiddenB_6',${time_6})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_6" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_6" src="${image_A_url_6}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_6" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_6" src="${image_B_url_6}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_7','hiddenB_7',${time_7})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_7" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_7" src="${image_A_url_7}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_7" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_7" src="${image_B_url_7}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_8','hiddenB_8',${time_8})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_8" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_8" src="${image_A_url_8}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_8" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_8" src="${image_B_url_8}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_9','hiddenB_9',${time_9})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_9" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_9" src="${image_A_url_9}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_9" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_9" src="${image_B_url_9}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_10','hiddenB_10',${time_10})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_10" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_10" src="${image_A_url_10}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_10" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_10" src="${image_B_url_10}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_11','hiddenB_11',${time_11})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_11" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_11" src="${image_A_url_11}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_11" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_11" src="${image_B_url_11}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_12','hiddenB_12',${time_12})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_12" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_12" src="${image_A_url_12}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_12" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_12" src="${image_B_url_12}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_13','hiddenB_13',${time_13})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_13" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_13" src="${image_A_url_13}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_13" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_13" src="${image_B_url_13}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_14','hiddenB_14',${time_14})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_14" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_14" src="${image_A_url_14}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_14" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_14" src="${image_B_url_14}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_15','hiddenB_15',${time_15})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_15" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_15" src="${image_A_url_15}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_15" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_15" src="${image_B_url_15}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_16','hiddenB_16',${time_16})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_16" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_16" src="${image_A_url_16}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_16" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_16" src="${image_B_url_16}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_17','hiddenB_17',${time_17})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_17" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_17" src="${image_A_url_17}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_17" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_17" src="${image_B_url_17}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_18','hiddenB_18',${time_18})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_18" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_18" src="${image_A_url_18}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_18" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_18" src="${image_B_url_18}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_19','hiddenB_19',${time_19})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_19" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_19" src="${image_A_url_19}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_19" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_19" src="${image_B_url_19}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_20','hiddenB_20',${time_20})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_20" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_20" src="${image_A_url_20}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_20" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_20" src="${image_B_url_20}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_21','hiddenB_21',${time_21})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_21" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_21" src="${image_A_url_21}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_21" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_21" src="${image_B_url_21}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_22','hiddenB_22',${time_22})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_22" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_22" src="${image_A_url_22}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_22" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_22" src="${image_B_url_22}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_23','hiddenB_23',${time_23})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_23" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_23" src="${image_A_url_23}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_23" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_23" src="${image_B_url_23}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_24','hiddenB_24',${time_24})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_24" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_24" src="${image_A_url_24}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_24" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_24" src="${image_B_url_24}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_25','hiddenB_25',${time_25})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_25" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_25" src="${image_A_url_25}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_25" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_25" src="${image_B_url_25}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_26','hiddenB_26',${time_26})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_26" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_26" src="${image_A_url_26}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_26" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_26" src="${image_B_url_26}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_27','hiddenB_27',${time_27})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_27" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_27" src="${image_A_url_27}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_27" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_27" src="${image_B_url_27}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_28','hiddenB_28',${time_28})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_28" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_28" src="${image_A_url_28}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_28" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_28" src="${image_B_url_28}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_29','hiddenB_29',${time_29})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_29" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_29" src="${image_A_url_29}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_29" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_29" src="${image_B_url_29}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_30','hiddenB_30',${time_30})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_30" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_30" src="${image_A_url_30}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_30" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_30" src="${image_B_url_30}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_31','hiddenB_31',${time_31})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_31" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_31" src="${image_A_url_31}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_31" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_31" src="${image_B_url_31}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_32','hiddenB_32',${time_32})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_32" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_32" src="${image_A_url_32}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_32" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_32" src="${image_B_url_32}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_33','hiddenB_33',${time_33})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_33" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_33" src="${image_A_url_33}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_33" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_33" src="${image_B_url_33}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_34','hiddenB_34',${time_34})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_34" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_34" src="${image_A_url_34}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_34" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_34" src="${image_B_url_34}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_35','hiddenB_35',${time_35})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_35" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_35" src="${image_A_url_35}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_35" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_35" src="${image_B_url_35}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_36','hiddenB_36',${time_36})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_36" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_36" src="${image_A_url_36}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_36" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_36" src="${image_B_url_36}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_37','hiddenB_37',${time_37})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_37" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_37" src="${image_A_url_37}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_37" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_37" src="${image_B_url_37}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_38','hiddenB_38',${time_38})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_38" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_38" src="${image_A_url_38}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_38" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_38" src="${image_B_url_38}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_39','hiddenB_39',${time_39})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_39" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_39" src="${image_A_url_39}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_39" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_39" src="${image_B_url_39}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_40','hiddenB_40',${time_40})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_40" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_40" src="${image_A_url_40}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_40" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_40" src="${image_B_url_40}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_41','hiddenB_41',${time_41})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_41" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_41" src="${image_A_url_41}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_41" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_41" src="${image_B_url_41}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_42','hiddenB_42',${time_42})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_42" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_42" src="${image_A_url_42}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_42" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_42" src="${image_B_url_42}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_43','hiddenB_43',${time_43})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_43" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_43" src="${image_A_url_43}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_43" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_43" src="${image_B_url_43}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_44','hiddenB_44',${time_44})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_44" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_44" src="${image_A_url_44}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_44" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_44" src="${image_B_url_44}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_45','hiddenB_45',${time_45})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_45" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_45" src="${image_A_url_45}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_45" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_45" src="${image_B_url_45}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_46','hiddenB_46',${time_46})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_46" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_46" src="${image_A_url_46}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_46" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_46" src="${image_B_url_46}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_47','hiddenB_47',${time_47})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_47" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_47" src="${image_A_url_47}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_47" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_47" src="${image_B_url_47}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_48','hiddenB_48',${time_48})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_48" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_48" src="${image_A_url_48}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_48" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_48" src="${image_B_url_48}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_49','hiddenB_49',${time_49})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_49" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_49" src="${image_A_url_49}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_49" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_49" src="${image_B_url_49}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_50','hiddenB_50',${time_50})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_50" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_50" src="${image_A_url_50}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_50" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_50" src="${image_B_url_50}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_51','hiddenB_51',${time_51})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_51" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_51" src="${image_A_url_51}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_51" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_51" src="${image_B_url_51}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_52','hiddenB_52',${time_52})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_52" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_52" src="${image_A_url_52}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_52" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_52" src="${image_B_url_52}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_53','hiddenB_53',${time_53})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_53" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_53" src="${image_A_url_53}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_53" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_53" src="${image_B_url_53}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_54','hiddenB_54',${time_54})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_54" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_54" src="${image_A_url_54}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_54" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_54" src="${image_B_url_54}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_55','hiddenB_55',${time_55})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_55" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_55" src="${image_A_url_55}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_55" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_55" src="${image_B_url_55}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_56','hiddenB_56',${time_56})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_56" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_56" src="${image_A_url_56}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_56" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_56" src="${image_B_url_56}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_57','hiddenB_57',${time_57})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_57" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_57" src="${image_A_url_57}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_57" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_57" src="${image_B_url_57}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_58','hiddenB_58',${time_58})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_58" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_58" src="${image_A_url_58}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_58" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_58" src="${image_B_url_58}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_59','hiddenB_59',${time_59})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_59" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_59" src="${image_A_url_59}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_59" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_59" src="${image_B_url_59}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_60','hiddenB_60',${time_60})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_60" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_60" src="${image_A_url_60}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_60" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_60" src="${image_B_url_60}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_61','hiddenB_61',${time_61})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_61" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_61" src="${image_A_url_61}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_61" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_61" src="${image_B_url_61}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_62','hiddenB_62',${time_62})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_62" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_62" src="${image_A_url_62}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_62" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_62" src="${image_B_url_62}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_63','hiddenB_63',${time_63})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_63" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_63" src="${image_A_url_63}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_63" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_63" src="${image_B_url_63}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_64','hiddenB_64',${time_64})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_64" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_64" src="${image_A_url_64}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_64" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_64" src="${image_B_url_64}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_65','hiddenB_65',${time_65})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_65" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_65" src="${image_A_url_65}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_65" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_65" src="${image_B_url_65}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_66','hiddenB_66',${time_66})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_66" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_66" src="${image_A_url_66}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_66" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_66" src="${image_B_url_66}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_67','hiddenB_67',${time_67})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_67" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_67" src="${image_A_url_67}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_67" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_67" src="${image_B_url_67}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_68','hiddenB_68',${time_68})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_68" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_68" src="${image_A_url_68}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_68" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_68" src="${image_B_url_68}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_69','hiddenB_69',${time_69})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_69" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_69" src="${image_A_url_69}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_69" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_69" src="${image_B_url_69}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_70','hiddenB_70',${time_70})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_70" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_70" src="${image_A_url_70}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_70" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_70" src="${image_B_url_70}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_71','hiddenB_71',${time_71})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_71" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_71" src="${image_A_url_71}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_71" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_71" src="${image_B_url_71}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_72','hiddenB_72',${time_72})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_72" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_72" src="${image_A_url_72}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_72" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_72" src="${image_B_url_72}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_73','hiddenB_73',${time_73})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_73" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_73" src="${image_A_url_73}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_73" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_73" src="${image_B_url_73}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_74','hiddenB_74',${time_74})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_74" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_74" src="${image_A_url_74}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_74" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_74" src="${image_B_url_74}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_75','hiddenB_75',${time_75})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_75" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_75" src="${image_A_url_75}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_75" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_75" src="${image_B_url_75}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_76','hiddenB_76',${time_76})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_76" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_76" src="${image_A_url_76}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_76" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_76" src="${image_B_url_76}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_77','hiddenB_77',${time_77})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_77" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_77" src="${image_A_url_77}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_77" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_77" src="${image_B_url_77}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_78','hiddenB_78',${time_78})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_78" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_78" src="${image_A_url_78}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_78" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_78" src="${image_B_url_78}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_79','hiddenB_79',${time_79})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_79" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_79" src="${image_A_url_79}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_79" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_79" src="${image_B_url_79}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_80','hiddenB_80',${time_80})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_80" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_80" src="${image_A_url_80}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_80" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_80" src="${image_B_url_80}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_81','hiddenB_81',${time_81})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_81" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_81" src="${image_A_url_81}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_81" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_81" src="${image_B_url_81}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_82','hiddenB_82',${time_82})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_82" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_82" src="${image_A_url_82}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_82" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_82" src="${image_B_url_82}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_83','hiddenB_83',${time_83})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_83" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_83" src="${image_A_url_83}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_83" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_83" src="${image_B_url_83}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_84','hiddenB_84',${time_84})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_84" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_84" src="${image_A_url_84}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_84" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_84" src="${image_B_url_84}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_85','hiddenB_85',${time_85})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_85" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_85" src="${image_A_url_85}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_85" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_85" src="${image_B_url_85}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_86','hiddenB_86',${time_86})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_86" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_86" src="${image_A_url_86}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_86" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_86" src="${image_B_url_86}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_87','hiddenB_87',${time_87})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_87" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_87" src="${image_A_url_87}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_87" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_87" src="${image_B_url_87}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_88','hiddenB_88',${time_88})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_88" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_88" src="${image_A_url_88}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_88" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_88" src="${image_B_url_88}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_89','hiddenB_89',${time_89})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_89" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_89" src="${image_A_url_89}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_89" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_89" src="${image_B_url_89}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_90','hiddenB_90',${time_90})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_90" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_90" src="${image_A_url_90}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_90" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_90" src="${image_B_url_90}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_91','hiddenB_91',${time_91})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_91" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_91" src="${image_A_url_91}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_91" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_91" src="${image_B_url_91}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_92','hiddenB_92',${time_92})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_92" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_92" src="${image_A_url_92}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_92" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_92" src="${image_B_url_92}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_93','hiddenB_93',${time_93})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_93" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_93" src="${image_A_url_93}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_93" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_93" src="${image_B_url_93}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_94','hiddenB_94',${time_94})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_94" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_94" src="${image_A_url_94}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_94" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_94" src="${image_B_url_94}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_95','hiddenB_95',${time_95})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_95" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_95" src="${image_A_url_95}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_95" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_95" src="${image_B_url_95}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_96','hiddenB_96',${time_96})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_96" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_96" src="${image_A_url_96}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_96" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_96" src="${image_B_url_96}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_97','hiddenB_97',${time_97})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_97" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_97" src="${image_A_url_97}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_97" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_97" src="${image_B_url_97}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_98','hiddenB_98',${time_98})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_98" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_98" src="${image_A_url_98}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_98" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_98" src="${image_B_url_98}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_99','hiddenB_99',${time_99})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_99" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_99" src="${image_A_url_99}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_99" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_99" src="${image_B_url_99}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_100','hiddenB_100',${time_100})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_100" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_100" src="${image_A_url_100}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_100" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_100" src="${image_B_url_100}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_101','hiddenB_101',${time_101})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_101" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_101" src="${image_A_url_101}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_101" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_101" src="${image_B_url_101}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_102','hiddenB_102',${time_102})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_102" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_102" src="${image_A_url_102}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_102" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_102" src="${image_B_url_102}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_103','hiddenB_103',${time_103})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_103" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_103" src="${image_A_url_103}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_103" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_103" src="${image_B_url_103}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_104','hiddenB_104',${time_104})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_104" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_104" src="${image_A_url_104}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_104" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_104" src="${image_B_url_104}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_105','hiddenB_105',${time_105})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_105" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_105" src="${image_A_url_105}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_105" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_105" src="${image_B_url_105}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_106','hiddenB_106',${time_106})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_106" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_106" src="${image_A_url_106}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_106" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_106" src="${image_B_url_106}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_107','hiddenB_107',${time_107})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_107" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_107" src="${image_A_url_107}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_107" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_107" src="${image_B_url_107}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_108','hiddenB_108',${time_108})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_108" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_108" src="${image_A_url_108}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_108" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_108" src="${image_B_url_108}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_109','hiddenB_109',${time_109})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_109" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_109" src="${image_A_url_109}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_109" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_109" src="${image_B_url_109}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+
+<p style="text-align: center;"><input class="btn btn-primary" name="show" onclick="showHide(this,'hiddenA_110','hiddenB_110',${time_110})" type="show" value="Show these images" /></p>
+
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemA" name="choice_110" required="" type="radio" value="optionA" /> <span class="pull-left"><strong>Left image is more realistic</strong></span> </span> <span class="img-wrap"><img alt="Option A" class="img-thumbnail img-check" height="200/" id="hiddenA_110" src="${image_A_url_110}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6">
+<div class="form-group"><label class="btn btn-default img-btn"><span class="clearfix img-label"><input autocomplete="off" class="pull-left img-options" id="itemB" name="choice_110" required="" type="radio" value="optionB" /> <span class="pull-left"><strong>Right image is more realistic</strong></span> </span> <span class="img-wrap"> <img alt="Option B" class="img-thumbnail img-check" height="200" id="hiddenB_110" src="${image_B_url_110}" style="visibility:hidden;" width="400" /> </span> </label></div>
+</div>
+</div>
+</section>
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet" />
+<style type="text/css">#collapseTrigger{ color:#fff; display: block; text-decoration: none; } #submitButton{ white-space: normal; } input.img-options{ 	margin: 3px 10px 5px 8px; } .img-check{ 	padding: 0; } .img-label{ 	padding: 6px 6px 0 6px; 	min-width: 300px; 	display: block; } .img-wrap{ 	background: transparent; 	padding: 6px 12px; 	display: block; } .img-background{ 	background: #5cb85c; } .img-btn{ 	padding: 0; 	display: block; }
+</style>
