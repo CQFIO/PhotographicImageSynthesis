@@ -2,7 +2,7 @@
 
 This is a Tensorflow implementation of cascaded refinement networks to synthesize photographic images from semantic layouts.
 
-<img src="http://web.stanford.edu/~cqf/ImageSynthesis/teaser.png"/>
+<img src="http://cqf.io/ImageSynthesis/teaser.png"/>
 
 ## Setup
 
