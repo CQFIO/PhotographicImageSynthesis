@@ -39,7 +39,7 @@ The scripts are put in the folder "mturk_scripts".
 1. Add the code and models for the GTA dataset.
 
 ## Question
-If you have any question or request about the training or test data, please email me at chenqifeng22@gmail.com.
+If you have any question or request about the code and data, please email me at chenqifeng22@gmail.com. If you need the pretrained model on NYU, please send an email to me.
 
 ## License
 MIT License
