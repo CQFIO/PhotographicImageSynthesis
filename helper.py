@@ -20,7 +20,7 @@ def get_semantic_map(path):
 
 def print_semantic_map(semantic,path):
     dataset=Dataset('cityscapes')
-    semantic=semantic.transpose([2,3,1,0])
+    semantic=semantic.transpose([1,2,3,0])
     prediction=np.argmax(semantic,axis=2)
     color_image=dataset.palette[prediction.ravel()].reshape((prediction.shape[0],prediction.shape[1],3))
     row,col,dump=np.where(np.sum(semantic,axis=2)==0)
