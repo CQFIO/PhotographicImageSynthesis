@@ -44,5 +44,11 @@ print('Dowloading CRN 256p Model (1.2Gb)')
 download_file_from_google_drive('0B_B_FOgPxgFLLUVQTEg0alRWNDQ', 'result_256p/model.ckpt.data-00000-of-00001')
 download_file_from_google_drive('0B_B_FOgPxgFLM0NjR2QxSUg5SWM', 'result_256p/model.ckpt.meta')
 
+print('Downloading GTA 256p Model (1.2Gb)')
+download_file_from_google_drive('0B_B_FOgPxgFLTVl2MWxpOGtzczA','result_GTA/model.ckpt.data-00000-of-00001')
+download_file_from_google_drive('0B_B_FOgPxgFLSThjb2hzSHM2Qzg','result_GTA/model.ckpt.meta')
 
+print('Downloading GTA 256p Model (1.2Gb)')
+download_file_from_google_drive('0B_B_FOgPxgFLTVl2MWxpOGtzczA','result_GTA/model.ckpt.data-00000-of-00001')
+download_file_from_google_drive('0B_B_FOgPxgFLSThjb2hzSHM2Qzg','result_GTA/model.ckpt.meta')
 
